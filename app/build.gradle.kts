@@ -11,14 +11,14 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "helium314.keyboard"
+        applicationId = "org.dslul.openboard.inputmethod.latin-DEBUG"
         minSdk = 21
         targetSdk = 35
         versionCode = 3801
-        versionName = "3.8"
+        versionName = "3.8-iode-debug"
         ndk {
             abiFilters.clear()
-            abiFilters.addAll(listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64"))
+            abiFilters.addAll(listOf("arm64-v8a"))
         }
         proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
     }
@@ -54,7 +54,7 @@ android {
             signingConfig = signingConfigs.getByName("debug")
             applicationIdSuffix = ".debug"
         }
-        base.archivesBaseName = "HeliBoard_" + defaultConfig.versionName
+        base.archivesBaseName = "app" + defaultConfig.versionName
         // got a little too big for GitHub after some dependency upgrades, so we remove the largest dictionary
         androidComponents.onVariants { variant: ApplicationVariant ->
             if (variant.buildType == "debug") {
