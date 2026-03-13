@@ -83,7 +83,7 @@ android {
     packaging {
         jniLibs {
             // shrinks APK by 3 MB, zipped size unchanged
-            useLegacyPackaging = true
+            useLegacyPackaging = false
         }
     }
 
