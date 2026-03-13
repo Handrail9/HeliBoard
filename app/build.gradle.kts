@@ -12,7 +12,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "org.dslul.openboard.inputmethod.latin-DEBUG"
+        applicationId = "iodedebug.org.dslul.openboard.inputmethod.latin"
         minSdk = 21
         targetSdk = 35
         versionCode = 3801 + Integer.parseInt(iodeVersionCode)
