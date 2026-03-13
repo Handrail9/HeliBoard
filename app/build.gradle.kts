@@ -14,8 +14,8 @@ android {
         applicationId = "org.dslul.openboard.inputmethod.latin-DEBUG"
         minSdk = 21
         targetSdk = 35
-        versionCode = 3801
-        versionName = "3.8-iode-debug"
+        versionCode = 3801 + Integer.parseInt(iodeVersionCode)
+        versionName = "3.8-iode-debug" + iodeVersionCode
         ndk {
             abiFilters.clear()
             abiFilters.addAll(listOf("arm64-v8a"))
