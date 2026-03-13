@@ -6,6 +6,7 @@ plugins {
     kotlin("plugin.serialization") version "2.2.21"
     kotlin("plugin.compose") version "2.2.21"
 }
+val iodeVersionCode: String by project
 
 android {
     compileSdk = 35
